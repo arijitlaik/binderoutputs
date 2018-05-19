@@ -1,0 +1,1214 @@
+{
+    "Type": "Model", 
+    "elementRes": [
+        400, 
+        80
+    ], 
+    "elementType": "Q1/dQ0", 
+    "gravity": [
+        0.0, 
+        {
+            "units": "meter / second ** 2", 
+            "value": -9.81
+        }
+    ], 
+    "materials": [
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": 0.0
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": null, 
+            "name": "Air", 
+            "plasticity": null, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": 0.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": 12.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+18
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic0", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -0.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": 0.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic1", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -1.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -0.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic2", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -1.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -1.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic3", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -2.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -1.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic4", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -2.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -2.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic5", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -3.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -2.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic6", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -3.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -3.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic7", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -4.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -3.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic8", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -4.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -4.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic9", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -5.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -4.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic10", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -5.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -5.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic11", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -6.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -5.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic12", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -6.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -6.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": {
+                "units": "pascal * second", 
+                "value": 1e+19
+            }, 
+            "name": "Plastic13", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -7.0
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -6.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": null, 
+            "name": "Basal_Frictional_Layer", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "pascal", 
+                    "value": 0.001
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "pascal", 
+                    "value": 0.001
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.2679491924311227, 
+                "frictionCoefficient": 0.2679491924311227, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -7.5
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -7.0
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": null, 
+            "name": "Rigid_Base", 
+            "plasticity": null, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": {
+                "Type": "Layer", 
+                "bottom": {
+                    "units": "kilometer", 
+                    "value": -8
+                }, 
+                "maxY": null, 
+                "minY": null, 
+                "top": {
+                    "units": "kilometer", 
+                    "value": -7.5
+                }
+            }, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+25
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }, 
+        {
+            "Type": "Material", 
+            "capacity": null, 
+            "density": {
+                "Type": "ConstantDensity", 
+                "reference_density": {
+                    "units": "kilogram / meter ** 3", 
+                    "value": 2700.0
+                }
+            }, 
+            "diffusivity": null, 
+            "elasticity": null, 
+            "latentHeatFusion": 0.0, 
+            "liquidus": null, 
+            "maxViscosity": null, 
+            "meltExpansion": 0.0, 
+            "meltFraction": 0.0, 
+            "meltFractionLimit": 1.0, 
+            "minViscosity": null, 
+            "name": "Sediment", 
+            "plasticity": {
+                "Type": "DruckerPrager", 
+                "cohesion": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "cohesionAfterSoftening": {
+                    "units": "megapascal", 
+                    "value": 20.0
+                }, 
+                "epsilon1": 0.5, 
+                "epsilon2": 1.0, 
+                "frictionAfterSoftening": 0.4663076581549986, 
+                "frictionCoefficient": 0.4663076581549986, 
+                "minimumViscosity": null, 
+                "name": null
+            }, 
+            "radiogenicHeatProd": 0.0, 
+            "shape": null, 
+            "solidus": null, 
+            "stressLimiter": null, 
+            "viscosity": {
+                "Type": "ConstantViscosity", 
+                "viscosity": {
+                    "units": "pascal * second", 
+                    "value": 1e+24
+                }
+            }, 
+            "viscosityChange": 1.0, 
+            "viscosityChangeX1": 0.15, 
+            "viscosityChangeX2": 0.3
+        }
+    ], 
+    "maxCoord": [
+        {
+            "units": "kilometer", 
+            "value": 100.0
+        }, 
+        {
+            "units": "kilometer", 
+            "value": 12.0
+        }
+    ], 
+    "minCoord": [
+        {
+            "units": "kilometer", 
+            "value": 0.0
+        }, 
+        {
+            "units": "kilometer", 
+            "value": -8
+        }
+    ], 
+    "name": "Model", 
+    "periodic": [
+        false, 
+        false
+    ], 
+    "rcParams": "### MATPLOTLIBRC FORMAT\n\n# This is a sample UWGeodynamics configuration file - you can find a copy\n# of it on your system in\n# site-packages/uwgeodynamics/uwgeo-data/uwgeodynamicsrc.  If you edit it\n# there, please note that it will be overwritten in your next install.\n# If you want to keep a permanent local copy that will not be\n# overwritten, place it in the following location:\n# unix/linux:\n#     $HOME/.config/uwgeodynamics/uwgeodynamicsrc or\n#     $XDG_CONFIG_HOME/uwgeodynamics/uwgeodynamicsrc (if $XDG_CONFIG_HOME is set)\n# other platforms:\n#     $HOME/.uwgeodynamics/uwgeodynamicsrc\n\n#### CONFIGURATION BEGINS HERE\n\n# Name of the model output directory\n#\n#output.directory : outputs\n#\n#\n# Gravitational acceleration\n#gravity : 9.81 meter / u.second**2\n#\n# Range of viscosities\n#minimum.viscosity : 1e19 pascal * u.second\n#maximum.viscosity : 1e25 pascal * second\n#\n# List of swarm variables\n#swarm.variables  :  materialField ,  plasticStrain ,  viscosityField ,  densityField \n\n# List of mesh variables\n#mesh.variables  :   velocityField ,  temperature ,  pressureField ,  strainRateField ,  projMaterialField ,  projViscosityField ,  projPlasticStrain ,  projDensityField \n\n# List of fields to output\n#default.outputs  :  materialField ,  temperature ,  pressureField ,  plasticStrain ,  velocityField \n#\n# List of default glucifer outputs\n#glucifer.outputs  :  materialField ,  temperature ,  pressureField ,  plasticStrain ,  velocityField \n#\n# swarm-layout number of particle per cell\n#swarm.particles.per.cell : 50\n#\n# population control parameters\n#popcontrol.aggressive  : True\n#popcontrol.split.threshold  : 0.15\n#popcontrol.max.splits  : 10\n#popcontrol.particles.per.cell  : 50\n#\n# CFL condition\n# CFL : 0.1\n# Solver configuration\n#solver  : mg\n#penalty  : 0.0\n#nonlinear.tolerance : 1e-2\n#maximum.timestep  : 200000\n#nonlinear.min.iterations : 3\n#nonlinear.max.iterations : 500\n#\n# Scaling coefficients\n#scaling.length : 1.0 meter\n#scaling.mass : 1.0 kilogram\n#scaling.time : 1.0 second\n#scaling.temperature : 1.0 u.degK\n#scaling.substance : 1.0 u.mole\n#\n# Common field units\n#velocity.units  : centimeter / year\n#temperature.units    : degK\n#pressure.units  : pascal\n#strain.rate  : 1.0 / second\n#viscosity.units : pascal * second\n#density.units : kilogram / meter**3\n#\n# Output field units\n#viscosityField  : pascal * second\n#densityField  : kilogram / metre**3\n#velocityField  : centimeter / u.year\n#temperature  : degK\n#pressureField  : pascal\n#strainRateField  : 1.0 / second\n#projViscosityField   : pascal * second\n#projDensityField  : kilogram / u.metre**3\n", 
+    "scaling": {
+        "[length]": {
+            "units": "meter", 
+            "value": 100000.0
+        }, 
+        "[mass]": {
+            "units": "kilogram", 
+            "value": 2.6376802875275784e+43
+        }, 
+        "[substance]": {
+            "units": "mole", 
+            "value": 1.0
+        }, 
+        "[temperature]": {
+            "units": "kelvin", 
+            "value": 1.0
+        }, 
+        "[time]": {
+            "units": "second", 
+            "value": 315569259747000.0
+        }
+    }, 
+    "temperatureBCs": null, 
+    "velocityBCs": null
+}

@@ -76,7 +76,7 @@ sediment = Model.add_material(name="Sediment")
 # In[14]:
 
 
-fnSize = 3
+fnSize = 2.5
 
 figSize = (int(Model.elementRes[0] * 4.5 + 10),
            int(Model.elementRes[1] * 4.5 + 150))
@@ -134,7 +134,7 @@ for plasticLayer in plasticLayers:
 frictionalBasalLayer.plasticity = GEO.DruckerPrager(
     cohesion=0.001 * u.pascal,
     #cohesionAfterSoftening=0.001 * u.pascal,
-    frictionCoefficient=np.tan(np.radians(10.0)),
+    frictionCoefficient=np.tan(np.radians(15.0)),
     #frictionAfterSoftening=np.tan(np.radians(15.0)),
     #epsilon1=0.01,
     #epsilon2=0.01
@@ -187,7 +187,7 @@ VelocityBcs = Model.set_velocityBCs(
 GEO.rcParams["solver"] = "lu"
 GEO.rcParams["penalty"] = 1e6
 GEO.rcParams["nonlinear.tolerance"] = 1e-3
-GEO.rcParams["initial.nonlinear.tolerance"]=1e-5
+GEO.rcParams["initial.nonlinear.tolerance"]=1e-4
 GEO.rcParams["nonlinear.max.iterations"]=200
 
 
@@ -264,7 +264,8 @@ figVm = Model.plot.velocityField(
     arrowlength=0.0075,
     arrownorm=.8,
     arrowres=(32,16,1),
-    arrowhead=3
+    arrowhead=3,
+    quality=3
     )
 
 
